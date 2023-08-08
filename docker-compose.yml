@@ -1,0 +1,26 @@
+version: "3"
+services:
+  grafana:
+    build:
+      context: grafana
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+
+    depends_on:
+      - pg-db
+
+  pg-db:
+    build:
+      context: postgres
+      dockerfile: Dockerfile
+    ports:
+      - "1599:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  grafana-data:
+  postgres-data:

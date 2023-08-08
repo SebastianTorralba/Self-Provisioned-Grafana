@@ -1,0 +1,22 @@
+apiVersion: 1
+
+datasources:
+  - name: postgres-datasource
+    uid: pgds
+    orgId: 1
+    type: postgres
+    access: proxy
+    url: pg-db:5432
+    database: testdb
+    user: postgres
+    basicAuth: false
+    secureJsonData:
+      password: "postgres"
+    jsonData:
+      sslmode: "disable"
+      tlsAuth: false
+      tlsAuthWithCACert: false
+      connMaxLifetime: 14400
+      postgresVersion: 903
+      timescaledb: false
+    isDefault: true

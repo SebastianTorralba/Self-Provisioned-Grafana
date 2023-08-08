@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "uid": "5RZLD564k",
+  "orgId": 1,
+  "name": "PostgreTEST",
+  "type": "postgres",
+  "typeLogoUrl": "",
+  "access": "proxy",
+  "url": "pg-db:5432",
+  "password": "",
+  "user": "postgres",
+  "database": "testdb",
+  "basicAuth": false,
+  "basicAuthUser": "",
+  "basicAuthPassword": "",
+  "withCredentials": false,
+  "isDefault": false,
+  "jsonData": {
+    "postgresVersion": 903,
+    "sslmode": "disable",
+    "tlsAuth": false,
+    "tlsAuthWithCACert": false,
+    "tlsConfigurationMethod": "file-path",
+    "tlsSkipVerify": true
+  },
+  "secureJsonFields": { "password": true },
+  "version": 4,
+  "readOnly": false
+}
